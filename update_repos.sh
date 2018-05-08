@@ -1,0 +1,1 @@
+find . -name ".git" -type d -exec echo {} \; -exec git --git-dir={} --work-tree=$PWD/{} pull  \;
