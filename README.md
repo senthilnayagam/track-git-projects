@@ -33,3 +33,10 @@ clean_repos
 ```
 sudo cp ./{clone_new_repos,parse_awesome_list,update_repos,update_repos_parallel,print_repos,print_repo_authors,clean_repos} /usr/local/bin/
 ```
+
+## additional examples
+
+parse all the awesome projects cloned earlier for the projects
+
+ find  . -type f -iname "readme.md" | xargs -n 1 -I{} parse_awesome_list {}
+
